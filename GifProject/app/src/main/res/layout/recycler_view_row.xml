@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rishikesh pathak"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:textColor="#3E2723"
+            />
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aug 10 2017 10:01 pm"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/nameTv"
+            android:textColor="#4E342E"
+            />
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/dateTv"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
